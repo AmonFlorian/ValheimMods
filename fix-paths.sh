@@ -1,7 +1,5 @@
 #!/bin/bash
-
 cd "$(dirname "$0")"
-
 sed -r \
 	-e 's!\.\..+Valheim\\(valheim_Data\\Managed|unstripped_corlib)\\(UnityEngine\.(UI|UIModule)\.dll)!..\\valheim_Data\\Managed\\\2!g' \
 	-e 's!\.\..+Valheim\\(valheim_Data\\Managed|unstripped_corlib)!..\\valheim_Data\\2019.4.20f1\\Editor\\Data\\Managed\\UnityEngine!g' \
